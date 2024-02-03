@@ -31,7 +31,7 @@ public class MatchesServlet extends HttpServlet {
         }
         long pageSize = 5; // количество записей на странице
 
-        long totalItems = 0;
+        long totalItems;
         List<Match> matches;
         if (filterName == null || filterName.trim().isEmpty()) {
             matches = matchDao.getAllPagination((int) page, (int) pageSize);
@@ -50,7 +50,7 @@ public class MatchesServlet extends HttpServlet {
         log.info("Total pages -> {}", totalPages);
         log.info("Current page -> {}", page);
         log.info("Total_Items -> {}", totalItems);
-        req.getRequestDispatcher("/view/matches.jsp").forward(req, resp);
+        req.getRequestDispatcher("/views/matches.jsp").forward(req, resp);
     }
 
 }

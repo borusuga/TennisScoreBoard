@@ -3,6 +3,7 @@
     flex-wrap: nowrap;
     width: 100%;
     justify-content: center;
+    font-family: Arial, serif;
 }
 
 .table-header {
@@ -11,8 +12,8 @@
 
 .table-general {
     white-space: nowrap;
-    width: 1010px;
-    background: green;
+    width: auto/*1010px*/;
+    background: #0073b2;
     margin-top: 30px;
     padding-bottom: 30px;
 }
@@ -44,8 +45,8 @@
 .table-result {
     display: flex;
     justify-content: center;
-    background-color: lightgray;
-    margin-bottom: 0px;
+    background-color: deepskyblue;
+    margin-bottom: 0;
 }
 
 .col-prev-sets {
@@ -160,10 +161,7 @@
     color: black;
     font-weight: bold;
     text-transform: uppercase;
-    margin-left: 10px !important;
-    margin-right: 10px !important;
-    margin-top: 0 !important;
-    margin-bottom: 0px !important;
+    margin: 0 10px !important;
     padding: 0 !important;
     position: absolute;
     top: 50%;
@@ -176,7 +174,7 @@
     font-weight: bold;
     text-transform: uppercase;
     margin-top: 10px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .text-result {
@@ -219,8 +217,8 @@
 .start-link {
     display: flex;
     margin-top: 30px;
-    background-color: green;
-    box-shadow: 0 5px 0 darkgreen;
+    background-color: #0073b2;
+    box-shadow: 0 5px 0 midnightblue;
     color: white;
     padding: 1em 1.5em;
     /*position: relative;*/
@@ -231,7 +229,7 @@
 
 .start-link:hover {
     color: #fff;
-    box-shadow: inset 600px 0 0 0 darkgreen;
+    box-shadow: inset 600px 0 0 0 darkblue;
 }
 
 .h1 {
@@ -291,7 +289,7 @@ select {
     margin-top: 10px;
     padding: 10px;
     border: none;
-    background-color: green;
+    background-color: #0073b2;
     color: white;
     font-weight: 600;
     border-radius: 5px;
@@ -300,6 +298,6 @@ select {
 
 .card_button:hover {
     color: white;
-    background-color: darkgreen;
+    background-color: darkblue;
 }
 

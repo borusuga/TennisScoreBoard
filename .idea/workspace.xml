@@ -9,37 +9,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e46d6e93-c9c9-471a-a26c-ddee57cd191c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/Tomcat_10_1_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/HelloServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/dao/Dao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/dao/MatchDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/dao/PlayerDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/models/Match.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/models/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/servlets/MatchesServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/utils/SessionFactoryUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/primaryStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/match-score.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/matches.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/new-match.jsp" afterDir="false" />
+    <list default="true" id="e46d6e93-c9c9-471a-a26c-ddee57cd191c" name="Changes" comment="servlets + jsp + services">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/services/CurrentMatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/services/FinishedMatchesPersistenceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/services/OngoingMatchesService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/services/newScore/GamePoints.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/services/newScore/GameRegularScore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/services/newScore/GameScore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/services/newScore/GameTieBreakScore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/services/newScore/MatchScore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/services/newScore/Score.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/services/newScore/SetScore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/services/newScore/State.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/servlets/EndMatchServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/servlets/MatchScoreServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/servlets/NewMatchServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Tomcat_10_1_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/dao/MatchDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/dao/MatchDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/servlets/MatchesServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/servlets/MatchesServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/primaryStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/primaryStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/match-score.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/match-score.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/matches.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/matches.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/new-match.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/new-match.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +68,12 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
   <component name="ProjectId" id="2aSdkTcrERgDwfT7KXW43Kwd1uj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -80,23 +82,37 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Maven.TennisScoreBoard [clean].executor": "Run",
+    "Maven.TennisScoreBoard [deploy].executor": "Run",
+    "Maven.TennisScoreBoard [install].executor": "Run",
+    "Maven.TennisScoreBoard [package].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Tomcat Server.Tomcat 10.1.11.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "project.structure.side.proportion": "0.39790577",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-20.0.2-corretto-20.0.2.1-4caba194b151-d89c1816" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -106,19 +122,77 @@
       <option name="presentableId" value="Default" />
       <updated>1704316060171</updated>
       <workItem from="1704316061668" duration="17480000" />
-      <workItem from="1704747894570" duration="2298000" />
+      <workItem from="1704747894570" duration="14119000" />
+      <workItem from="1706715284939" duration="60000" />
+      <workItem from="1706715418228" duration="86000" />
+      <workItem from="1706715609795" duration="18817000" />
     </task>
+    <task id="LOCAL-00001" summary="init + MatchesServlet">
+      <option name="closed" value="true" />
+      <created>1704753099852</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1704753099852</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init + MatchesServlet" />
+    <MESSAGE value="servlets + jsp + services" />
+    <option name="LAST_COMMIT_MESSAGE" value="servlets + jsp + services" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jrt:///Users/borush.nova/Library/Java/JavaVirtualMachines/openjdk-20/Contents/Home!/java.base/java/lang/Throwable.class</url>
+          <url>jrt://$USER_HOME$/Library/Java/JavaVirtualMachines/openjdk-20/Contents/Home!/java.base/java/lang/Throwable.class</url>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jrt://$USER_HOME$/Library/Java/JavaVirtualMachines/openjdk-20/Contents/Home!/java.base/java/util/AbstractMap.class</url>
+          <line>17</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/utils/SessionFactoryUtil.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/servlets/MatchScoreServlet.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/services/newScore/MatchScore.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/services/newScore/MatchScore.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/services/newScore/MatchScore.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

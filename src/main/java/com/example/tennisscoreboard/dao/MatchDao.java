@@ -20,7 +20,7 @@ public class MatchDao implements Dao<Match> {
             session.persist(match);
             transaction.commit();
         } catch (Exception e) {
-            if (transaction == null) {
+            if (transaction != null) {
                 transaction.rollback();
             }
             e.printStackTrace();
@@ -105,7 +105,7 @@ public class MatchDao implements Dao<Match> {
         int uniqueResults = 0;
         try (Session session = SessionFactoryUtil.getSessionFactory().getCurrentSession()) {
             session.beginTransaction();
-            Query query = session.createQuery("SELECT count(*) from Match where player1.name like:name or player2.name like:name", Match.class);
+            Query query = session.createQuery("SELECT count(*) from Match where player1.name like:name or player2.name like:name");
             query.setParameter("name", "%" + name.toUpperCase().trim() + "%");
             uniqueResults = (int) query.getSingleResult();
             session.getTransaction().commit();
@@ -119,7 +119,7 @@ public class MatchDao implements Dao<Match> {
         long uniqueResults = 0;
         try (Session session = SessionFactoryUtil.getSessionFactory().getCurrentSession()) {
             session.beginTransaction();
-            Query query = session.createQuery("SELECT count(*) from Match", Match.class);
+            Query query = session.createQuery("SELECT count(*) from Match");
             uniqueResults = (long) query.getSingleResult();
             session.getTransaction().commit();
         } catch (Exception e) {
