@@ -10,32 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e46d6e93-c9c9-471a-a26c-ddee57cd191c" name="Changes" comment="servlets + jsp + services">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/services/CurrentMatch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/services/FinishedMatchesPersistenceService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/services/OngoingMatchesService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/services/newScore/GamePoints.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/services/newScore/GameRegularScore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/services/newScore/GameScore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/services/newScore/GameTieBreakScore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/services/newScore/MatchScore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/services/newScore/Score.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/services/newScore/SetScore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/services/newScore/State.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/servlets/EndMatchServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/servlets/MatchScoreServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/servlets/NewMatchServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Tomcat_10_1_11.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/Tomcat_10_1_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/tennisscoreboard/services/newScore/GameRegularScoreTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/tennisscoreboard/services/newScore/GameTieBreakScoreTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/tennisscoreboard/services/newScore/MatchScoreTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/tennisscoreboard/services/newScore/SetScoreTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/dao/MatchDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/dao/MatchDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/servlets/MatchesServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tennisscoreboard/servlets/MatchesServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/primaryStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/primaryStyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/views/match-score.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/match-score.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/matches.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/matches.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/new-match.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/new-match.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +65,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.GameRegularScoreTest.TestAdvantage.executor": "Run",
+    "JUnit.GameRegularScoreTest.executor": "Run",
+    "JUnit.GameTieBreakScoreTest.WonGameOnTieBreakSevenPointsAndDifferenceAtLeastTwo.executor": "Run",
+    "JUnit.GameTieBreakScoreTest.executor": "Run",
+    "JUnit.MatchScoreTest.executor": "Run",
+    "JUnit.SetScoreTest.executor": "Run",
     "Maven.TennisScoreBoard [clean].executor": "Run",
     "Maven.TennisScoreBoard [deploy].executor": "Run",
     "Maven.TennisScoreBoard [install].executor": "Run",
@@ -106,6 +95,108 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java/services/newScore" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.11">
+    <configuration name="GameRegularScoreTest.TestAdvantage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TennisScoreBoard" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.tennisscoreboard.services.newScore.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.tennisscoreboard.services.newScore" />
+      <option name="MAIN_CLASS_NAME" value="com.example.tennisscoreboard.services.newScore.GameRegularScoreTest" />
+      <option name="METHOD_NAME" value="TestAdvantage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameTieBreakScoreTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TennisScoreBoard" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.tennisscoreboard.services.newScore.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.tennisscoreboard.services.newScore" />
+      <option name="MAIN_CLASS_NAME" value="com.example.tennisscoreboard.services.newScore.GameTieBreakScoreTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameTieBreakScoreTest.WonGameOnTieBreakSevenPointsAndDifferenceAtLeastTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TennisScoreBoard" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.tennisscoreboard.services.newScore.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.tennisscoreboard.services.newScore" />
+      <option name="MAIN_CLASS_NAME" value="com.example.tennisscoreboard.services.newScore.GameTieBreakScoreTest" />
+      <option name="METHOD_NAME" value="WonGameOnTieBreakSevenPointsAndDifferenceAtLeastTwo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MatchScoreTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TennisScoreBoard" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.tennisscoreboard.services.newScore.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.tennisscoreboard.services.newScore" />
+      <option name="MAIN_CLASS_NAME" value="com.example.tennisscoreboard.services.newScore.MatchScoreTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SetScoreTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TennisScoreBoard" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.tennisscoreboard.services.newScore.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.tennisscoreboard.services.newScore" />
+      <option name="MAIN_CLASS_NAME" value="com.example.tennisscoreboard.services.newScore.SetScoreTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.GameRegularScoreTest.TestAdvantage" />
+      <item itemvalue="JUnit.GameTieBreakScoreTest" />
+      <item itemvalue="JUnit.GameTieBreakScoreTest.WonGameOnTieBreakSevenPointsAndDifferenceAtLeastTwo" />
+      <item itemvalue="JUnit.MatchScoreTest" />
+      <item itemvalue="JUnit.SetScoreTest" />
+      <item itemvalue="Tomcat Server.Tomcat 10.1.11" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MatchScoreTest" />
+        <item itemvalue="JUnit.SetScoreTest" />
+        <item itemvalue="JUnit.GameTieBreakScoreTest" />
+        <item itemvalue="JUnit.GameTieBreakScoreTest.WonGameOnTieBreakSevenPointsAndDifferenceAtLeastTwo" />
+        <item itemvalue="JUnit.GameRegularScoreTest.TestAdvantage" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -125,7 +216,7 @@
       <workItem from="1704747894570" duration="14119000" />
       <workItem from="1706715284939" duration="60000" />
       <workItem from="1706715418228" duration="86000" />
-      <workItem from="1706715609795" duration="18817000" />
+      <workItem from="1706715609795" duration="21821000" />
     </task>
     <task id="LOCAL-00001" summary="init + MatchesServlet">
       <option name="closed" value="true" />
@@ -135,7 +226,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704753099852</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="servlets + jsp + services">
+      <option name="closed" value="true" />
+      <created>1706918857132</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1706918857132</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,7 +245,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
